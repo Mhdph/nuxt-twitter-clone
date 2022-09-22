@@ -1,5 +1,8 @@
 <template>
   <div :class="{ dark: darkMode }">
+    <Head>
+      <Title>Twitter</Title>
+    </Head>
     <div class="bg-white dark:bg-dim-900">
       <div class="min-h-full">
         <div
@@ -12,7 +15,13 @@
             </div>
           </div>
           <!-- main -->
+          <main class="col-span-12 md:col-span-8 xl:col-span-6"></main>
           <!-- right -->
+          <div class="hidden md:block xs:col-span-4 md:col-span-3">
+            <div class="sticky top-0">
+              <SidebarRight />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -20,5 +29,5 @@
 </template>
 
 <script setup>
-const darkMode = ref(true);
+const darkMode = ref(false);
 </script>
