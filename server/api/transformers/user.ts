@@ -5,7 +5,7 @@ export const userTransformer = (user: userDataSchema) => {
     id: user.id,
     name: user.name,
     email: user.email,
-    usename: user.username,
+    username: user.username,
     profileImage: user.profileImage,
   };
 };
